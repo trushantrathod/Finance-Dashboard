@@ -1,87 +1,63 @@
-# 🏦 FINFLOW: Personal Finance Dashboard
+# 🏦 FINFLOW — Personal Finance Dashboard
 
-FINFLOW is a high-performance, responsive personal finance management application built with React. It enables users to track their financial health through real-time analytics, role-based access control, and advanced transaction management.
+FINFLOW is a responsive React-based finance dashboard designed to track income, expenses, and overall financial health.
+It focuses on clean UI, structured state management, and role-based functionality.
 
 ---
 
 ## 🚀 Features
 
-### 📊 Executive Overview
-- Real-time KPI cards:
-  - Total Balance
-  - Total Income
-  - Total Expenses
-  - Savings Rate (auto-calculated)
+### 📊 Dashboard Overview
+- KPI cards: Balance, Income, Expenses, Savings Rate
+- Real-time updates based on transaction data
 
-### 📈 Visual Analytics
-- Interactive charts using Chart.js:
-  - Monthly Income vs Expenses
-  - Category-wise Spending Breakdown
-  - Net Balance Trends
+### 📈 Data Visualization
+- Monthly Income vs Expense chart
+- Category-wise expense breakdown
+- Net balance trend
 
 ### 🔐 Role-Based Access (RBAC)
-- **Admin**
-  - Full CRUD access
-- **Viewer**
-  - Read-only mode
+- **Admin:** Full CRUD access (Add, Edit, Delete)
+- **Viewer:** Read-only access
 
 ### 🧾 Transaction Management
-- Search transactions by description
+- Search by description
 - Filter by date range
-- Group by category or type
-- Export data:
-  - CSV
-  - JSON
-
-### 🎨 UI/UX Highlights
-- Dark mode interface
-- Responsive (mobile-first design)
-- Clean typography (Syne & DM Mono)
-- Smooth animations & hover effects
-- Optimized layout for all screen sizes
+- Group by category/type
+- Export data (CSV, JSON)
 
 ---
 
-## 🛠 Tech Stack
-
-- **Frontend:** React (Hooks & Functional Components)
-- **Styling:** CSS3 (Custom + Variables)
-- **Charts:** Chart.js
-- **Formatting:** Intl.NumberFormat (INR support)
+## 🎨 Design & User Experience
+- Clean dark-themed UI
+- Clear visual hierarchy for financial insights
+- Smooth interactions and intuitive navigation
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1. Clone the Repository
-git clone https://github.com/your-username/finflow.git
-cd finflow
-
-### 2. Install Dependencies
-npm install
-
-### 3. Run Development Server
-npm run dev
-
-### 4. Build for Production
-npm run build
+## 📱 Responsiveness
+- Mobile-first design
+- Works across mobile, tablet, and desktop
+- Layout built using Flexbox and Grid
 
 ---
 
-## 🏗 Architecture
+## ⚙️ Technical Implementation
 
-- **Centralized State Management**
-  - Managed in `App.jsx` (single source of truth)
+### 🛠 Tech Stack
+- React (Functional Components + Hooks)
+- Chart.js (Data visualization)
+- CSS3 (Custom styling with variables)
 
-- **Component-Based Structure**
-  - Modular and reusable components
+### 🧠 State Management
+- Centralized state in `App.jsx`
+- Props-based data flow
+- Single source of truth for transactions
 
-- **Performance Optimization**
-  - Chart cleanup using `useEffect`
-  - Efficient rendering
-
-- **Error Handling**
-  - Graceful handling of empty/no-data states
+### 🏗 Code Quality
+- Modular component structure
+- Reusable components
+- Clean separation of concerns
 
 ---
 
@@ -90,42 +66,33 @@ npm run build
 src/
 ├── components/
 │   ├── Dashboard.jsx
+│   ├── Transactions.jsx
 │   ├── Modal.jsx
 │   ├── Nav.jsx
-│   ├── Topbar.jsx
-│   └── Transactions.jsx
-├── data.js
+│   └── Topbar.jsx
 ├── App.jsx
+├── data.js
 ├── styles.css
 └── main.jsx
 
 ---
 
-## 📱 Responsiveness
+## ⚡ Setup Instructions
 
-- Mobile-first design
-- Works across phones, tablets, and desktops
-- Optimized layouts using Flexbox & Grid
+git clone https://github.com/trushantrathod/Finance-Dashboard.git
+cd Finance-Dashboard
+npm install
+npm run dev
 
 ---
 
 ## 📝 Additional Notes
 
-- Accessibility-friendly design (semantic HTML + contrast)
-- Local state used (ready for backend integration)
-- Easily extendable to Firebase / Node.js
+- Handles empty/no-data states gracefully
+- Chart instances cleaned up to avoid memory leaks
+- Designed for easy backend integration
 
 ---
 
-## 🔮 Future Enhancements
-
-- Backend integration (Firebase / Express)
-- User authentication
-- Budget tracking & alerts
-- Multi-user support
-
----
-
-## 💡 Author
-
-Developed using React with focus on performance, scalability, and clean UI.
+## 👨‍💻 Author
+Trushant Rathod
