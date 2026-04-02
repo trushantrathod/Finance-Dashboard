@@ -63,6 +63,7 @@ It focuses on clean UI, structured state management, and role-based functionalit
 
 ## 📂 Project Structure
 
+```bash
 src/
 ├── components/
 │   ├── Dashboard.jsx
